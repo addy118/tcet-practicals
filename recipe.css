@@ -1,0 +1,33 @@
+body {
+    background-color: #FFF01D;
+    font-family: Ubuntu, Open sans-serif;
+}
+
+img {
+    width: 100px;
+    height: 50px;
+    
+}
+
+h1 {
+    margin: 0 0 0 8px;
+    color: #000;
+}
+
+h4 {
+    margin: 0 0 0 5px;
+}
+
+div {
+    background-color: #E70023;
+    color: #FFF01D;
+    padding: 4px 2px;
+    margin: 2px 0 10px 0;
+}
+
+.header {
+    background-color: #FFF01D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
