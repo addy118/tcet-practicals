@@ -1,9 +1,9 @@
-table, tr, th, td {
+tr, th, td {
     border: thin solid white;
-    border-collapse: collapse;
-    padding: 6px;
+    border-radius: 6px;
+    padding: 10px;
     text-align: center;
-    background-color: lightsalmon;
+    background-color: #ffcab9;
 }
 
 th {
@@ -13,4 +13,8 @@ th {
 
 td {
     padding: 6px 16px;
+}
+
+.empty {
+    background-color: #ffb0b0;
 }
