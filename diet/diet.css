@@ -1,10 +1,16 @@
 table, tr, th, td {
-    border: thin solid black;
+    border: thin solid white;
     border-collapse: collapse;
     padding: 6px;
-    border-radius: 2px;
+    text-align: center;
+    background-color: lightsalmon;
 }
 
 th {
-    padding: 8px;
+    padding: 6px 12px;
+    background-color: lightcoral;
+}
+
+td {
+    padding: 6px 16px;
 }
