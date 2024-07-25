@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tcet {
+    /* width: 700px; */
+    width: 100%
+}
+
+article {
+    background-color: rgb(255, 231, 223);
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.basic-info {
+    display: flex;
+    align-items: top;
+    justify-content: left;
+}
