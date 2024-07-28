@@ -1,8 +1,7 @@
 def encryptRailFence(plain_text, depth):
     
-    # creates a matrix with char \n in it
-    rail = [['\n' for i in range(len(plain_text))]
-                for j in range(depth)]
+    # creates a matrix with default char \n in it
+    rail = [['\n' for i in range(len(plain_text))] for j in range(depth)]
 
     # initially it goes upward
     dir_down = False
@@ -32,6 +31,59 @@ def encryptRailFence(plain_text, depth):
         for j in range(len(plain_text)):
             if rail[i][j] != '\n':
                 result.append(rail[i][j])
-    return("" . join(result))
+    return "" . join(result)
 
-print(encryptRailFence('hello', 3))
+
+def decryptRailFence(cipher_text, depth):
+    rail = [['\n' for i in range(len(cipher_text))] for j in range(depth)]
+
+    # to find the direction
+    dir_down = None
+    row, col = 0, 0
+
+    # mark the places with '*'
+    for i in range(len(cipher_text)):
+        if row == 0:
+            dir_down = True
+        if row == depth - 1:
+            dir_down = False
+
+        # place the marker
+        rail[row][col] = '*'
+        col += 1
+
+        if dir_down:
+            row += 1
+        else:
+            row -= 1
+
+    index = 0
+    for i in range(depth):
+        for j in range(len(cipher_text)):
+            if ((rail[i][j] == '*') and
+                    (index < len(cipher_text))):
+                rail[i][j] = cipher_text[index]
+                index += 1
+
+    result = []
+    row, col = 0, 0
+    for i in range(len(cipher_text)):
+
+        if row == 0:
+            dir_down = True
+        if row == depth - 1:
+            dir_down = False
+
+        if rail[row][col] != '*':
+            result.append(rail[row][col])
+            col += 1
+
+        if dir_down:
+            row += 1
+        else:
+            row -= 1
+    return "".join(result)
+
+
+print(f'hello after encryption with depth = 3 --> {encryptRailFence('hello', 3)}')
+print(f'hoell after decryption with depth = 3 --> {decryptRailFence('hoell', 3)}')
