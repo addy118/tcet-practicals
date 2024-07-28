@@ -1,6 +1,6 @@
 plain_text = input('Enter the plain text: ')
 cypher_text = input('Enter the cypher text: ')
-key = int(input('Enter the additive key: '))
+key = int(input('Enter the additive depth: '))
 
 def encrypt(plain, key):
     cypher_text = ''
