@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TCET Canteen Form</title>
+
+    <link rel="stylesheet" href="canteen.css">
+</head>
+<body>
+<article>
+    <header>
+        <img class="tcet" src="../essentials/tcet-header.jpg" alt="TCET HEADER">
+        <h1>TCET FOOD ORDER FORM</h1>
+    </header>
+
+    <form>
+        <div class="basic-info">
+            <div class="left">
+                <label for="fname">Full Name: </label>
+                <input type="text" id="fname" name="fname">
+                <br>
+                <label for="dept">Department: </label>
+                <select name="dept" id="dept">
+                    <option value="comps">Computer Science</option>
+                    <option value="it">Information Technology</option>
+                </select>
+                <br>
+                Year:
+                <input type="radio" id="fe" name="year">
+                <label for="se">FE</label>
+                <input type="radio" id="se" name="year">
+                <label for="se">SE</label>
+                <input type="radio" id="te" name="year">
+                <label for="se">TE</label>
+                <input type="radio" id="be" name="year">
+                <label for="se">BE</label>
+            </div>
+            <div class="right">
+                <label for="contact">Contact: </label>
+                <input type="text" id="contact" name="contact">
+                <br>
+                <label for="class">Class: </label>
+                <select name="class" id="class">
+                    <option value="a">A</option>
+                    <option value="b">B</option>
+                    <option value="c">C</option>
+                </select>
+            </div>
+        </div>
+        <div class="order">
+            <label for="category">Food Category: </label>
+            <select name="category" id="category">
+                <option value="snacks">Snacks</option>
+                <option value="italian">Italian</option>
+                <option value="chinese">Chinese</option>
+                <option value="south">South Indian</option>
+                <option value="north">North Indian</option>
+            </select>
+            <br>
+            Food Items:
+            <br>
+            <input type="checkbox" name="item1" id="item1">
+            <label for="item1">Idli</label>
+            <br>
+            <input type="checkbox" name="item2" id="item2">
+            <label for="item2">Medu Vada</label>
+            <br>
+            <input type="checkbox" name="item3" id="item3">
+            <label for="item3">Masala Dosa</label>
+            <br>
+            <p>Additional Information: </p>
+            <textarea name="add" id="add" placeholder="Give some additional information"></textarea>
+            <br>
+            <label for="pickup">Pick-Up Time: </label>
+            <select name="pickup" id="pickup">
+                <option value="10">10:00</option>
+                <option value="12">12:00</option>
+                <option value="14">14:00</option>
+                <option value="16">16:00</option>
+            </select>
+        </div>
+        <input type="submit">
+    </form>
+</article>
+</body>
+</html>
+
+<!--
+label: for
+input: type | id | name | value
+proper linking: for = id = name
+-->
