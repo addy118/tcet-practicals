@@ -85,5 +85,5 @@ def decryptRailFence(cipher_text, depth):
     return "".join(result)
 
 
-print(f'hello after encryption with depth = 3 --> {encryptRailFence('hello', 3)}')
-print(f'hoell after decryption with depth = 3 --> {decryptRailFence('hoell', 3)}')
+print(f'Aditya Kirti after encryption with depth = 3 --> {encryptRailFence('Aditya Kirti', 3)}')
+print(f'AyidtaKrii t after decryption with depth = 3 --> {decryptRailFence('AyidtaKrii t', 3)}')
