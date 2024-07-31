@@ -1,15 +1,7 @@
-pid = ['p1', 'p2', 'p3', 'p4']
+pid = [1, 2, 3, 4]
 at = [0, 1, 2, 3]
 bt = [8, 4, 9, 5]
 
-length = int(input('Enter the total number '))
-
-while length != 0:
-    pid
-
-# ct = [8, 12, 21, 26]
-# tat = [8, 11, 19, 23]
-# wt = [0, 7, 10, 18]
 
 def get_ct(at, bt):
     ct = []
@@ -22,6 +14,7 @@ def get_ct(at, bt):
     
     return ct
 
+
 def get_tat(ct, at):
     tat = []
 
@@ -29,6 +22,7 @@ def get_tat(ct, at):
         tat.append(ct[i] - at[i])
 
     return tat
+
 
 def get_wt(tat, bt):
     wt = []
@@ -38,12 +32,34 @@ def get_wt(tat, bt):
 
     return wt
 
+
 ct = get_ct(at, bt)
-print(ct)
 
 tat = get_tat(ct, at)
-print(tat)
 
 wt = get_wt(tat, bt)
-print(wt)
+
+answer = [pid, at, bt, ct, tat, wt]
+headers = ['PID', 'AT', 'BT', 'CT', 'TAT', 'WT']
+
+# for header in headers:
+#     print(f"{header:4}", end="\t|")
+# print()
+#
+# for row in answer:
+#     for val in row:
+#         print(f"{val:4}", end="\t|")
+#     print()
+
+# Print headers
+header_line = " | ".join(f"{header:3}" for header in headers)
+print(f"{header_line} |")
+
+# Print values
+for row in zip(*answer):
+    print(" | ".join(f"{val:3}" for val in row) + " |")
+
+# print(ct, tat, wt, sep='\n')
+print(f"Average Waiting Time = {sum(wt)/len(wt)}")
+print(f"Average Turn Around Time = {sum(tat)/len(tat)}")
         
