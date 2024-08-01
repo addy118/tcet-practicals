@@ -14,32 +14,31 @@
         <img class="tcet" src="../essentials/tcet-header.jpg" alt="TCET HEADER">
         <h1>TCET FOOD ORDER FORM</h1>
     </header>
-
     <form>
-        <div class="basic-info">
-            <div class="left">
+        <div class="order">
+            <div class="row">
                 <label for="fname">Full Name: </label>
                 <input type="text" id="fname" name="fname">
+            </div>
+            <div class="row">
                 <label for="dept">Department: </label>
                 <select name="dept" id="dept">
                     <option value="comps">Computer Science</option>
                     <option value="it">Information Technology</option>
                 </select>
-                Year:
-                <div>
-                    <input type="radio" id="fe" name="year">
-                    <label for="fe">FE</label>
-                    <input type="radio" id="se" name="year">
-                    <label for="se">SE</label>
-                    <input type="radio" id="te" name="year">
-                    <label for="te">TE</label>
-                    <input type="radio" id="be" name="year">
-                    <label for="be">BE</label>
-                </div>
             </div>
-            <div class="right">
-                <label for="contact">Contact: </label>
-                <input type="text" id="contact" name="contact">
+            <div class="row year">
+                <b>Year:</b>
+                <input type="radio" id="fe" name="year">
+                <label for="fe">FE</label>
+                <input type="radio" id="se" name="year">
+                <label for="se">SE</label>
+                <input type="radio" id="te" name="year">
+                <label for="te">TE</label>
+                <input type="radio" id="be" name="year">
+                <label for="be">BE</label>
+            </div>
+            <div class="row">
                 <label for="class">Class: </label>
                 <select name="class" id="class">
                     <option value="a">A</option>
@@ -47,9 +46,7 @@
                     <option value="c">C</option>
                 </select>
             </div>
-        </div>
-        <div class="order">
-            <div>
+            <div class="row">
                 <label for="category">Food Category: </label>
                 <select name="category" id="category" onchange="updateFoodItems()">
                     <option value="snacks">Snacks</option>
@@ -62,7 +59,7 @@
             <div id="food-items">
                 <!-- Food items will be dynamically inserted here based on the selected category -->
             </div>
-            <div>
+            <div class="row">
                 <label for="pickup">Pick-Up Time: </label>
                 <select name="pickup" id="pickup">
                     <option value="10">10:00</option>
@@ -71,12 +68,12 @@
                     <option value="16">16:00</option>
                 </select>
             </div>
-            <div>
+            <div class="row">
                 <p>Additional Information: </p>
                 <textarea name="add" id="add" placeholder="Give some additional information"></textarea>
             </div>
         </div>
-        <input type="submit">
+        <input type="submit" value="Submit">
     </form>
 </article>
 </body>

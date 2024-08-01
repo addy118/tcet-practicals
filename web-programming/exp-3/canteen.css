@@ -14,37 +14,51 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    /*margin-bottom: 20px;*/
 }
 
 .tcet {
     width: 100%;
+    margin-bottom: 6px;
 }
 
 article {
     background-color: #fff;
-    width: 80%;
+    width: 35%;
     max-width: 800px;
-    padding: 20px;
+    padding: 40px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.basic-info, .order {
+.order {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
 }
 
-.left, .right {
+.row {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     margin-bottom: 10px;
+    width: 100%;
 }
 
-.left label, .right label {
-    margin-bottom: 5px;
+.row label {
+    margin-right: 10px;
     font-weight: bold;
+}
+
+.row .year {
+    margin: 10px 0;
+}
+
+.row input[type="text"], .row select {
+    flex: 1;
+    margin-left: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 textarea {
@@ -65,7 +79,7 @@ textarea {
     margin-top: 10px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Align food items to the left */
+    align-items: flex-start;
 }
 
 .food-item {
@@ -83,6 +97,12 @@ input[type="text"], select, textarea {
     border-radius: 4px;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
 input[type="submit"] {
     background-color: #007bff;
     color: #fff;
@@ -91,7 +111,7 @@ input[type="submit"] {
     padding: 10px 15px;
     font-size: 16px;
     cursor: pointer;
-    align-self: center; /* Center the submit button */
+    /*margin-top: 20px;*/
 }
 
 input[type="submit"]:hover {
