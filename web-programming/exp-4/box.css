@@ -1,0 +1,40 @@
+.nav {
+    background-color: orange;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    display: flex;
+    padding: 4px;
+}
+
+.nav-items {
+    font-size: 8px;
+    padding: 4px 18px;
+    margin: 0 4px;
+    border-radius: 25px;
+    transition: background-color 0.15s;
+}
+.nav-items:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.container {
+    margin: 80px 0 0 0;
+    display: flex;
+}
+
+.outside {
+    border: 4px solid greenyellow;
+    width: 100px;
+    height: 100px;
+    padding: 50px;
+    margin-right: 50px;
+    border-radius: 250px;
+}
+
+.inside {
+    border: 4px solid black;
+    background-color: blue;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+}
