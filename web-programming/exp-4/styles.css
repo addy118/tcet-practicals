@@ -1,0 +1,55 @@
+body {
+    font-family: Roboto, sans-serif;
+    margin: 20px;
+    background-color: #d50224;
+}
+
+.about, .fav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fee218;
+    border: thin solid black;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+span {
+    font-weight: bolder;
+    font-family: Consolas, monospace;
+    color: #d50224;
+}
+
+h1 {
+    color: #000;
+    font-family: Roboto, sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 0 20px 0;
+    text-align: justify;
+}
+
+dl {
+    border: thin solid black;
+    padding: 20px;
+    background-color: #fff;
+    max-width: 600px;
+    margin: 0 0;
+}
+
+dt {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+dd {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
