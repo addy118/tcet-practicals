@@ -1,0 +1,132 @@
+body{
+  font-family: serif;
+  max-width: 100%;
+  min-width:800px;
+}
+
+.topnav {
+  padding-top: 2px;
+  overflow: hidden;
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  margin-top: 0px;
+} 
+
+.topnav img{
+  float:left;
+}
+
+.topnav a {
+  /* float: left; */
+  color: black;
+  text-align: center;
+  padding: 14px 15px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 17px;
+  font-weight: 400;
+  height: 100%;
+  letter-spacing: 0.3px;
+  margin-top: 0px;
+}
+
+.topnav a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+.topnav a.active {
+  text-decoration: underline;
+  color: black;
+}
+
+
+#sidenav a{
+  background-color: black;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+#sidenav{
+  text-align: center;
+}
+
+#slider{
+  padding-top: 50px;
+}
+
+#slider img{
+  width: 60%;
+  margin-right: 20%;
+  margin-left: 20%;
+}
+
+#intro{
+  width: 60%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#categories{
+  display: table;
+}
+
+#bootSneaker{
+  float: left;
+  width: 50%;
+}
+
+#bootSneaker img{
+  width: 100%;
+}
+
+#heelFlat{
+  float: right;
+  width: 50%;
+}
+
+#heelFlat img{
+  width: 100%;
+}
+
+footer{
+  text-align: center;
+  font-weight: 400px;
+}
+
+form{
+  display: inline-block;
+  text-align: left;
+}
+
+form label{
+  width: 240px;
+  display: inline-block;
+}
+
+form #radios label{
+  width: 100px;
+}
+
+.button_style{
+  background-color: black;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-color: black;
+  text-align: center;
+  width: 100%;
+}
+
+.form_para{
+      font-weight: bold;
+      font-size: 15px;
+      font-family: arial;
+}   
