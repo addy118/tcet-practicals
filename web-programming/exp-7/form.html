@@ -1,69 +1,75 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Form Validation</title>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 	<link rel="stylesheet" type="text/css" href="form.css">
 </head>
+
 <body style="text-align: center;">
-	<div style = "padding-top: 70px;"></div>
+	<div style="padding-top: 70px;"></div>
 
-	<form onsubmit = "return validateForm()">
-		<p class = "form_para">Please complete the following requirements to have <br>a better experience shopping with us.</p>
+	<form onsubmit="return validateForm()">
+		<p class="form_para">Please complete the following requirements to have <br>a better experience shopping with
+			us.</p>
 		<br>
-		<label for = "user_name">Username: </label>&nbsp;
-		<input type="text" id = "user_name" name="user_name" onblur = "validateText('user_name')">
+		<label for="user_name">Username: </label>&nbsp;
+		<input type="text" id="user_name" name="user_name" onblur="validateText('user_name')">
 		<br><br>
 
-		<label for = "password">Password: </label>&nbsp;
-		<input type="password" name="password" id="password"> 
+		<label for="password">Password: </label>&nbsp;
+		<input type="password" name="password" id="password">
 		<br><br>
-		<label for = "confirm">Confirm Password: </label>&nbsp;
-		<input type="password" name="confirm" id="confirm" onblur = "validatePassword()"> 
-		<span id = 'check' style="display:none;"></span>
+		<label for="confirm">Confirm Password: </label>&nbsp;
+		<input type="password" name="confirm" id="confirm" onblur="validatePassword()">
+		<span id='check' style="display:none;"></span>
 		<br><br>
-		<label for = "email">E-mail Address: </label>&nbsp;
-		<input type="email" name="email" id="email" onblur = "validateEmail()">  
-		<span id = "invalid3" style="display:none;"></span>
-		<br><br>
-
-		<label for = "bldg">Building Number: </label>&nbsp;
-		<input type="number" name="bldg" id="bldg" onblur =  "validateBldg()"> <span id = "invalid2" style="display:none;"></span>
-		<br><br>
-		<label for = "street">Street Name: </label>&nbsp;
-		<input type="text" name="street" id="street" onblur = "validateText('street')">
-		<br><br>
-		<label for = "cities">Select City: </label>&nbsp;
-		<select name = "cities" id = "cities"  onblur = "validateCity()">
-			<option value = "select">Select a City</option>
-			<option value = "mumbai">Mumbai</option>
-			<option value = "pune">Pune</option>
-			<option value = "chennai">Chennai</option>
-			<option value = "hyderabad">Hyderabad</option>
-			<option value = "bangalore">Bangalore</option>
-			<option value = "lucknow">Lucknow</option>
-		</select> <span id = "city" style="display:none;"></span>
+		<label for="email">E-mail Address: </label>&nbsp;
+		<input type="email" name="email" id="email" onblur="validateEmail()">
+		<span id="invalid3" style="display:none;"></span>
 		<br><br>
 
-		<label for = "number">Phone Number: </label>&nbsp;
-		<input type="number" name = "number" id="number" onblur = "validateNumber()"> <span id = "invalid1" style="display:none;"></span>
+		<label for="bldg">Building Number: </label>&nbsp;
+		<input type="number" name="bldg" id="bldg" onblur="validateBldg()"> <span id="invalid2"
+			style="display:none;"></span>
+		<br><br>
+		<label for="street">Street Name: </label>&nbsp;
+		<input type="text" name="street" id="street" onblur="validateText('street')">
+		<br><br>
+		<label for="cities">Select City: </label>&nbsp;
+		<select name="cities" id="cities" onblur="validateCity()">
+			<option value="select">Select a City</option>
+			<option value="mumbai">Mumbai</option>
+			<option value="pune">Pune</option>
+			<option value="chennai">Chennai</option>
+			<option value="hyderabad">Hyderabad</option>
+			<option value="bangalore">Bangalore</option>
+			<option value="lucknow">Lucknow</option>
+		</select> <span id="city" style="display:none;"></span>
 		<br><br>
 
-		<section id = "radios">
-		<input type="radio" id="phone" value="phone" name="option">
-  		<label for="phone">Phone</label>
-  		<input type="radio" name="option" id = "emailid" value = "emailid">
-  		<label for = "emailid">E-mail</label>
-  		<input type="radio" name="option" id = "message" value = "message">
-  		<label for = "message">Message</label> <span id = "radio" style = "display: none;">  </span>
+		<label for="number">Phone Number: </label>&nbsp;
+		<input type="number" name="number" id="number" onblur="validateNumber()"> <span id="invalid1"
+			style="display:none;"></span>
+		<br><br>
 
-  		<br><br>
-  		</section>
+		<section id="radios">
+			<input type="radio" id="phone" value="phone" name="option">
+			<label for="phone">Phone</label>
+			<input type="radio" name="option" id="emailid" value="emailid">
+			<label for="emailid">E-mail</label>
+			<input type="radio" name="option" id="message" value="message">
+			<label for="message">Message</label> <span id="radio" style="display: none;"> </span>
 
-  		<input type="submit" name="submit" value = "Submit" class = "button_style">
+			<br><br>
+		</section>
+
+		<input type="submit" name="submit" value="Submit" class="button_style">
 	</form>
 
 	<script src="form.js"></script>
 </body>
+
 </html>
