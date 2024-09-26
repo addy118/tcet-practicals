@@ -1,5 +1,0 @@
-1. append the original bit for padding.
-2. in this way you need to calculate length mod64.
-3. most of the cases 64 bits is obtained as answer so append 64 bit in that.
-4. A = a, B = b, C = c, D = d.
-5. divide 512 bit blocks into 16 blocks each having 32 bits. in that 4 rounds are performed by using 16 sub-blocks and constant k.
